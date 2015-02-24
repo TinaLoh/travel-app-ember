@@ -1,0 +1,11 @@
+.post-photo {
+  border: 2px solid black;
+  width: 230px;
+  height: 150px;
+}
+
+.lg-photo {
+  border: 2px solid black;
+  width: 800px;
+  height: 450px;
+}

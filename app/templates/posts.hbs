@@ -1,0 +1,20 @@
+<h1>This is Index Template</h1>
+
+
+<br>
+
+<div class="ui five column grid">
+  {{#each post in model}}
+  <div class="column">
+    <div class="ui segment">
+      <img class="post-photo" {{bind-attr src=post.photo}}class="ui fluid image">
+      <li>{{#link-to "posts.show" post}}{{post.name}}{{/link-to}}</li>
+    </div>
+  </div>
+  {{/each}}
+</div>
+
+<br>
+<em>{{#link-to "posts.new"}}To Add New Post{{/link-to}}</em>
+
+{{outlet}}
